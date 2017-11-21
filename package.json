@@ -1,0 +1,27 @@
+{
+  "name": "doc",
+  "author": "hanumant",
+  "version": "0.0.0",
+  "description": "Deck of Cards: a web app for people with OCD",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/india1938/doc.git"
+  },
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.18.2",
+    "debug": "~2.6.9",
+    "ejs": "^2.5.7",
+    "express": "~4.15.5",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
+    "serve-favicon": "~2.4.5"
+  }
+}
