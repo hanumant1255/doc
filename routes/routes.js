@@ -1,7 +1,7 @@
 'use strict';
 
 const auth = require('basic-auth');
-const core = require('../helpers/core');
+const core = require('../service/core');
 
 
 module.exports = router => {
@@ -9,7 +9,7 @@ module.exports = router => {
    * @api {get} /login Request User information
    * @apiName GetUser
    * @apiGroup User
-   * @apiSuccess {Json} user module
+   * @apiSuccess {Json} user model
    */
     router.get('/login', (req, res) => {
 
@@ -39,7 +39,7 @@ module.exports = router => {
      * @api {post} /register Create new User
      * @apiName CreateUser
      * @apiGroup User
-     * @apiSuccess {Json} user module
+     * @apiSuccess {Json} user model
      */
     router.post('/register', (req, res) => {
 
@@ -67,11 +67,9 @@ module.exports = router => {
     });
     /**
      * @api {put} /user/:cardholder/:cardvalue update user status
-     * @apiParam {cardholder} name of cardHolder
-     * @apiParam {cardvalue} value of card
      * @apiName UpdateUser
      * @apiGroup User
-     * @apiSuccess {Json} user module
+     * @apiSuccess {Json} user model
      */
     router.put('/user/:cardholder/:cardvalue', (req, res) => {
 
@@ -102,7 +100,7 @@ module.exports = router => {
      * @api {put} /user/refresh refresh user status
      * @apiName refreshUser
      * @apiGroup User
-     * @apiSuccess {Json} user module
+     * @apiSuccess {Json} user model
      */
     router.get('/user/refresh', (req, res) => {
 
