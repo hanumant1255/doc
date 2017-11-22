@@ -24,7 +24,9 @@ mongoose.connect('mongodb://localhost/test')
 app.use(bodyParser.json());
 
 // for parsing application/xwww-
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 app.use(logger('dev'));
 
@@ -36,6 +38,3 @@ app.use('/api/v1', router);
 app.listen(port);
 
 console.log(`App Runs on ${port}`);
-
-
-
