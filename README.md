@@ -3,8 +3,8 @@
 It is simple `playing card gard` game. APIs has been exposed using express framework. Asynchronous nature of `nodejs`
 is handled using promises and `basic authentication` has been used to secure APIs .
 ## Installation
-If you don't have `mongoDB`  installed, do [that](https://docs.mongodb.com/manual/administration/install-community/) first.
-If you don't have `node` and `npm` installed, do [that](https://docs.npmjs.com/getting-started/installing-node) that as well.
+If you don't have `mongoDB`  installed, do [mongoDB](https://docs.mongodb.com/manual/administration/install-community/) first.
+If you don't have `node` and `npm` installed, do [node](https://docs.npmjs.com/getting-started/installing-node) that as well.
 
 Install the node dependencies and start mongodb.
 
