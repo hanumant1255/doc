@@ -11,6 +11,8 @@ Install the node dependencies and start mongodb.
 ```bash
 # Install all necessary npm packages:
 $ npm install
-# start your mongodb database:
+# start your mongodb database.
+# from bin folder of mongoDB installation path run
+$ mongod
 # start the server:default port-3000
 $ npm start
